@@ -22,7 +22,7 @@ weatherForm.addEventListener('submit', (e) => {
 				messageTwo.textContent = data.forecast
 			}
 		})
-	})clearInterval()
+	})
 })
 
 
