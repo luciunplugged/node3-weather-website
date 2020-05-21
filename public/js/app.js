@@ -12,8 +12,8 @@ weatherForm.addEventListener('submit', (e) => {
 
 	const location = search.value
 
-	// //get data from the browser and provide error message
-	fetch('http://localhost:3000/weather?address=' + location).then((response) => {
+	////get data from the browser and provide error message
+	fetch('/weather?address=' + location).then((response) => {
 		response.json().then((data) => {
 			if (data.error) {
 				messageOne.textContent = 'I mean, do you really want the weather?'
@@ -22,7 +22,7 @@ weatherForm.addEventListener('submit', (e) => {
 				messageTwo.textContent = data.forecast
 			}
 		})
-	})
+	})clearInterval()
 })
 
 
