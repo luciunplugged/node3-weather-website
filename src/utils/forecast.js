@@ -13,7 +13,7 @@ const forecast = (latitude, longitude, callback) => {
 			callback(undefined,
 				'Here is the weather for ' + body.location.name + ', ' + body.location.region +
 				'. Currently it is ' + body.current.temperature + ' degress and feels like ' + body.current.feelslike +
-				 '. It is ' + body.current.weather_descriptions[0].toLowerCase() + ' and there is a ' + body.current.precip +
+				 '. It is ' + body.current.weather_descriptions[0].toLowerCase() + ' with ' + body.current.humidity + '% humidity and there is a ' + body.current.precip +
 				'% chance of rain.'
 
 			)
